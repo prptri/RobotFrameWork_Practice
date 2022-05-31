@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220531 19:33:23.224" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot Interactive Console" source="c:\Users\prptr\.vscode\extensions\robocorp.robotframework-lsp-0.48.0\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test" line="5">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="Open Browser">
+<arg>${login_page_url}</arg>
+<arg>chrome</arg>
+<msg timestamp="20220531 19:33:24.691" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20220531 19:33:24.690" endtime="20220531 19:33:24.691"/>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" starttime="20220531 19:33:24.698" endtime="20220531 19:33:24.698"/>
+</kw>
+<kw name="Input Text">
+<arg>${email_input_path}</arg>
+<arg>${email_text}</arg>
+<status status="NOT RUN" starttime="20220531 19:33:24.701" endtime="20220531 19:33:24.702"/>
+</kw>
+<kw name="Input Password">
+<arg>${password_input_path}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" starttime="20220531 19:33:24.705" endtime="20220531 19:33:24.705"/>
+</kw>
+<kw name="Click Button">
+<arg>Login</arg>
+<status status="NOT RUN" starttime="20220531 19:33:24.711" endtime="20220531 19:33:24.711"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Test Completed</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220531 19:33:24.711" endtime="20220531 19:33:24.711"/>
+</kw>
+<status status="PASS" starttime="20220531 19:33:23.253" endtime="20220531 19:33:25.495"/>
+</kw>
+<status status="PASS" starttime="20220531 19:33:23.252" endtime="20220531 19:33:25.495"/>
+</test>
+<status status="PASS" starttime="20220531 19:33:23.226" endtime="20220531 19:33:25.496"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

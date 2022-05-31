@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220531 20:25:41.963" rpa="false" schemaversion="3">
+<suite id="s1" name="BlognoneJobSearching" source="C:\Users\prptr\OneDrive\Documents\GitHub\RobotFrameWork_Practice\Tests\BlognoneJob\BlognoneJobSearching.robot">
+<test id="s1-t1" name="Check Landing Page Jobs Topic" line="8">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://jobs.blognone.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220531 20:25:42.260" level="INFO">Opening browser 'chrome' to base url 'https://jobs.blognone.com/'.</msg>
+<status status="PASS" starttime="20220531 20:25:42.259" endtime="20220531 20:25:44.866"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220531 20:25:44.867" endtime="20220531 20:25:44.988"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="root"]/div/div/div/div[2]/div[1]/div/a[6]/div[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220531 20:25:44.989" level="INFO">Clicking element 'xpath://*[@id="root"]/div/div/div/div[2]/div[1]/div/a[6]/div[2]'.</msg>
+<status status="PASS" starttime="20220531 20:25:44.989" endtime="20220531 20:25:45.068"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220531 20:25:47.074" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220531 20:25:45.068" endtime="20220531 20:25:47.074"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>หางาน ตำแหน่ง</arg>
+<arg>Qa</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220531 20:25:47.094" level="INFO">Current page contains text 'หางาน ตำแหน่ง'.</msg>
+<status status="PASS" starttime="20220531 20:25:47.075" endtime="20220531 20:25:47.094"/>
+</kw>
+<status status="PASS" starttime="20220531 20:25:42.258" endtime="20220531 20:25:47.095"/>
+</test>
+<test id="s1-t2" name="Searching Jobs in Landing Page" line="15">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://jobs.blognone.com/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220531 20:25:47.098" level="INFO">Opening url 'https://jobs.blognone.com/'</msg>
+<status status="PASS" starttime="20220531 20:25:47.097" endtime="20220531 20:25:47.711"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="root"]/div/div/div/div[1]/div[2]/div[1]/form/div[2]/input</arg>
+<arg>Okkami</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220531 20:25:47.713" level="INFO">Typing text 'Okkami' into text field 'xpath://*[@id="root"]/div/div/div/div[1]/div[2]/div[1]/form/div[2]/input'.</msg>
+<status status="PASS" starttime="20220531 20:25:47.712" endtime="20220531 20:25:47.828"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://*[@id="root"]/div/div/div/div[1]/div[2]/div[1]/form/div[2]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220531 20:25:47.830" level="INFO">Clicking button 'xpath://*[@id="root"]/div/div/div/div[1]/div[2]/div[1]/form/div[2]/button'.</msg>
+<status status="PASS" starttime="20220531 20:25:47.829" endtime="20220531 20:25:47.906"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220531 20:25:49.915" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220531 20:25:47.907" endtime="20220531 20:25:49.915"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>หางาน ตำแหน่งหรือบริษัท</arg>
+<arg>Okkami</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220531 20:25:49.934" level="INFO">Current page contains text 'หางาน ตำแหน่งหรือบริษัท'.</msg>
+<status status="PASS" starttime="20220531 20:25:49.916" endtime="20220531 20:25:49.935"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Test Completed</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220531 20:25:49.935" level="INFO">Test Completed</msg>
+<status status="PASS" starttime="20220531 20:25:49.935" endtime="20220531 20:25:49.936"/>
+</kw>
+<status status="PASS" starttime="20220531 20:25:47.097" endtime="20220531 20:25:49.936"/>
+</test>
+<test id="s1-t3" name="Filter Check" line="23">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="searchBody"]/div[2]/div[1]/div/div/div/div[15]/label/input</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220531 20:25:49.939" level="INFO">Clicking element 'xpath://*[@id="searchBody"]/div[2]/div[1]/div/div/div/div[15]/label/input'.</msg>
+<status status="PASS" starttime="20220531 20:25:49.939" endtime="20220531 20:25:50.010"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220531 20:25:52.021" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220531 20:25:50.011" endtime="20220531 20:25:52.021"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>หางาน ตำแหน่งหรือบริษัท</arg>
+<arg>okkami Qa</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220531 20:25:52.035" level="INFO">Current page contains text 'หางาน ตำแหน่งหรือบริษัท'.</msg>
+<status status="PASS" starttime="20220531 20:25:52.022" endtime="20220531 20:25:52.035"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220531 20:25:55.047" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220531 20:25:52.036" endtime="20220531 20:25:55.047"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath://*[@id="searchBody"]/div[2]/div[2]/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220531 20:25:55.048" level="INFO">Clicking link 'xpath://*[@id="searchBody"]/div[2]/div[2]/a'.</msg>
+<status status="PASS" starttime="20220531 20:25:55.048" endtime="20220531 20:25:55.110"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Filter Check Test Completed</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220531 20:25:55.111" level="INFO">Filter Check Test Completed</msg>
+<status status="PASS" starttime="20220531 20:25:55.111" endtime="20220531 20:25:55.111"/>
+</kw>
+<status status="PASS" starttime="20220531 20:25:49.938" endtime="20220531 20:25:55.112"/>
+</test>
+<doc>Testing the BlognoneJob Searching</doc>
+<status status="PASS" starttime="20220531 20:25:41.965" endtime="20220531 20:25:55.114"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="BlognoneJobSearching">BlognoneJobSearching</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
