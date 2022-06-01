@@ -33,4 +33,13 @@ Applying with login
     Page Should Contain    Application for
     Log    Test Completed
 
-Editing Profile Test
+Editing Upload Profile Test
+    Choose File
+    ...    xpath://*[@id="root"]/div/div/form/div[1]/div[3]/div/div[2]/div/div[1]/div[1]/div/input
+    ...    ${EXECDIR}/Resources/Files/This is Resume.pdf
+    Choose File
+    ...    xpath://*[@id="root"]/div/div/form/div[1]/div[3]/div/div[2]/div/div[1]/div[1]/div/input
+    ...    ${EXECDIR}/Resources/Files/This is Transcript.pdf
+    Sleep    1
+    Page Should Contain    View Current File
+    Close Browser
