@@ -21,6 +21,8 @@ ${login_header_button}          //*[@id="root"]/div/nav/div/ul[2]/li/a
 ${wrong_password}               dfkoegks
 ${alert_login}                  Unable to log in with provided credentials.
 ${alert_login_element}          xpath://*[@id="root"]/div/div/div/div/form/div[3]
+${main_page_check}              the best place to find tech talents
+${page_profile_check}           Overview
 
 
 *** Test Cases ***
@@ -36,11 +38,11 @@ Signing with Correct Email and Password
 Sign Out
     Sleep    2
     Click Link    ${link_to_profile_dashboard}
-    Page Should Contain    Overview
+    Page Should Contain    ${page_profile_check}
     Sleep    2
     Click Link    ${signout_link}
     Sleep    2
-    Page Should Contain    the best place to find tech talents
+    Page Should Contain    ${main_page_check}
     Log    Test Completed
 
 Signing with Wrong Email

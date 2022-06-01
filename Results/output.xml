@@ -1,131 +1,227 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220531 20:25:41.963" rpa="false" schemaversion="3">
-<suite id="s1" name="BlognoneJobSearching" source="C:\Users\prptr\OneDrive\Documents\GitHub\RobotFrameWork_Practice\Tests\BlognoneJob\BlognoneJobSearching.robot">
-<test id="s1-t1" name="Check Landing Page Jobs Topic" line="8">
+<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220601 18:54:58.698" rpa="false" schemaversion="3">
+<suite id="s1" name="BlognoneJobApplying" source="C:\Users\prptr\OneDrive\Documents\GitHub\RobotFrameWork_Practice\Tests\BlognoneJob\BlognoneJobApplying.robot">
+<test id="s1-t1" name="Applying without login" line="8">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>https://jobs.blognone.com/</arg>
+<arg>https://jobs.blognone.com/login?next=https%3A%2F%2Fjobs.blognone.com%2F</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220531 20:25:42.260" level="INFO">Opening browser 'chrome' to base url 'https://jobs.blognone.com/'.</msg>
-<status status="PASS" starttime="20220531 20:25:42.259" endtime="20220531 20:25:44.866"/>
+<msg timestamp="20220601 18:54:58.969" level="INFO">Opening browser 'chrome' to base url 'https://jobs.blognone.com/login?next=https%3A%2F%2Fjobs.blognone.com%2F'.</msg>
+<status status="PASS" starttime="20220601 18:54:58.969" endtime="20220601 18:55:01.005"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220531 20:25:44.867" endtime="20220531 20:25:44.988"/>
+<status status="PASS" starttime="20220601 18:55:01.006" endtime="20220601 18:55:01.137"/>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath://*[@id="root"]/div/div/div/div[2]/div[1]/div/a[6]/div[2]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220531 20:25:44.989" level="INFO">Clicking element 'xpath://*[@id="root"]/div/div/div/div[2]/div[1]/div/a[6]/div[2]'.</msg>
-<status status="PASS" starttime="20220531 20:25:44.989" endtime="20220531 20:25:45.068"/>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://jobs.blognone.com/company/okkami-inc/job/software-quality-ass-hQwN</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220601 18:55:01.138" level="INFO">Opening url 'https://jobs.blognone.com/company/okkami-inc/job/software-quality-ass-hQwN'</msg>
+<status status="PASS" starttime="20220601 18:55:01.138" endtime="20220601 18:55:01.726"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220531 20:25:47.074" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220531 20:25:45.068" endtime="20220531 20:25:47.074"/>
-</kw>
-<kw name="Page Should Contain" library="SeleniumLibrary">
-<arg>หางาน ตำแหน่ง</arg>
-<arg>Qa</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20220531 20:25:47.094" level="INFO">Current page contains text 'หางาน ตำแหน่ง'.</msg>
-<status status="PASS" starttime="20220531 20:25:47.075" endtime="20220531 20:25:47.094"/>
-</kw>
-<status status="PASS" starttime="20220531 20:25:42.258" endtime="20220531 20:25:47.095"/>
-</test>
-<test id="s1-t2" name="Searching Jobs in Landing Page" line="15">
-<kw name="Go To" library="SeleniumLibrary">
-<arg>https://jobs.blognone.com/</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220531 20:25:47.098" level="INFO">Opening url 'https://jobs.blognone.com/'</msg>
-<status status="PASS" starttime="20220531 20:25:47.097" endtime="20220531 20:25:47.711"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>xpath://*[@id="root"]/div/div/div/div[1]/div[2]/div[1]/form/div[2]/input</arg>
-<arg>Okkami</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220531 20:25:47.713" level="INFO">Typing text 'Okkami' into text field 'xpath://*[@id="root"]/div/div/div/div[1]/div[2]/div[1]/form/div[2]/input'.</msg>
-<status status="PASS" starttime="20220531 20:25:47.712" endtime="20220531 20:25:47.828"/>
+<msg timestamp="20220601 18:55:03.730" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220601 18:55:01.727" endtime="20220601 18:55:03.730"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
-<arg>xpath://*[@id="root"]/div/div/div/div[1]/div[2]/div[1]/form/div[2]/button</arg>
+<arg>xpath://*[@id="root"]/div/div/div/div[1]/div[2]/button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220531 20:25:47.830" level="INFO">Clicking button 'xpath://*[@id="root"]/div/div/div/div[1]/div[2]/div[1]/form/div[2]/button'.</msg>
-<status status="PASS" starttime="20220531 20:25:47.829" endtime="20220531 20:25:47.906"/>
+<msg timestamp="20220601 18:55:03.731" level="INFO">Clicking button 'xpath://*[@id="root"]/div/div/div/div[1]/div[2]/button'.</msg>
+<status status="PASS" starttime="20220601 18:55:03.731" endtime="20220601 18:55:03.853"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220531 20:25:49.915" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220531 20:25:47.907" endtime="20220531 20:25:49.915"/>
+<msg timestamp="20220601 18:55:05.862" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220601 18:55:03.853" endtime="20220601 18:55:05.862"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
-<arg>หางาน ตำแหน่งหรือบริษัท</arg>
-<arg>Okkami</arg>
+<arg>Please login before performing that action</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20220531 20:25:49.934" level="INFO">Current page contains text 'หางาน ตำแหน่งหรือบริษัท'.</msg>
-<status status="PASS" starttime="20220531 20:25:49.916" endtime="20220531 20:25:49.935"/>
+<msg timestamp="20220601 18:55:05.877" level="INFO">Current page contains text 'Please login before performing that action'.</msg>
+<status status="PASS" starttime="20220601 18:55:05.863" endtime="20220601 18:55:05.877"/>
+</kw>
+<status status="PASS" starttime="20220601 18:54:58.968" endtime="20220601 18:55:05.878"/>
+</test>
+<test id="s1-t2" name="Applying with login" line="19">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://jobs.blognone.com/login?next=https%3A%2F%2Fjobs.blognone.com%2F</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220601 18:55:05.881" level="INFO">Opening url 'https://jobs.blognone.com/login?next=https%3A%2F%2Fjobs.blognone.com%2F'</msg>
+<status status="PASS" starttime="20220601 18:55:05.881" endtime="20220601 18:55:06.203"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220601 18:55:08.216" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220601 18:55:06.204" endtime="20220601 18:55:08.216"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="email"]</arg>
+<arg>pattri.prp@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220601 18:55:08.217" level="INFO">Typing text 'pattri.prp@gmail.com' into text field '//*[@id="email"]'.</msg>
+<status status="PASS" starttime="20220601 18:55:08.217" endtime="20220601 18:55:08.384"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>//*[@id="password"]</arg>
+<arg>1928prptri</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220601 18:55:08.385" level="INFO">Typing password into text field '//*[@id="password"]'.</msg>
+<msg timestamp="20220601 18:55:08.434" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220601 18:55:08.505" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220601 18:55:08.385" endtime="20220601 18:55:08.505"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>Login</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220601 18:55:08.506" level="INFO">Clicking button 'Login'.</msg>
+<status status="PASS" starttime="20220601 18:55:08.506" endtime="20220601 18:55:08.577"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220601 18:55:10.597" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220601 18:55:08.591" endtime="20220601 18:55:10.597"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://jobs.blognone.com/company/okkami-inc/job/software-quality-ass-hQwN</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220601 18:55:10.598" level="INFO">Opening url 'https://jobs.blognone.com/company/okkami-inc/job/software-quality-ass-hQwN'</msg>
+<status status="PASS" starttime="20220601 18:55:10.598" endtime="20220601 18:55:11.147"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://*[@id="root"]/div/div/div/div[1]/div[2]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220601 18:55:11.148" level="INFO">Clicking button 'xpath://*[@id="root"]/div/div/div/div[1]/div[2]/button'.</msg>
+<status status="PASS" starttime="20220601 18:55:11.148" endtime="20220601 18:55:11.236"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220601 18:55:13.243" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220601 18:55:11.237" endtime="20220601 18:55:13.243"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Application for</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220601 18:55:13.263" level="INFO">Current page contains text 'Application for'.</msg>
+<status status="PASS" starttime="20220601 18:55:13.244" endtime="20220601 18:55:13.264"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>Test Completed</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220531 20:25:49.935" level="INFO">Test Completed</msg>
-<status status="PASS" starttime="20220531 20:25:49.935" endtime="20220531 20:25:49.936"/>
+<msg timestamp="20220601 18:55:13.264" level="INFO">Test Completed</msg>
+<status status="PASS" starttime="20220601 18:55:13.264" endtime="20220601 18:55:13.264"/>
 </kw>
-<status status="PASS" starttime="20220531 20:25:47.097" endtime="20220531 20:25:49.936"/>
+<status status="PASS" starttime="20220601 18:55:05.880" endtime="20220601 18:55:13.264"/>
 </test>
-<test id="s1-t3" name="Filter Check" line="23">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath://*[@id="searchBody"]/div[2]/div[1]/div/div/div/div[15]/label/input</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220531 20:25:49.939" level="INFO">Clicking element 'xpath://*[@id="searchBody"]/div[2]/div[1]/div/div/div/div[15]/label/input'.</msg>
-<status status="PASS" starttime="20220531 20:25:49.939" endtime="20220531 20:25:50.010"/>
+<test id="s1-t3" name="Editing Profile Test" line="36">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220601 18:55:15.281" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220601 18:55:13.267" endtime="20220601 18:55:15.281"/>
+</kw>
+<kw name="Choose File" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div/form/div[1]/div[3]/div/div[2]/div/div/div[2]/div[1]</arg>
+<arg>../../Resources/File/This is Resume.pdf</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<msg timestamp="20220601 18:55:15.282" level="INFO">Sending C:\Users\prptr\OneDrive\Documents\Resources\File\This is Resume.pdf to browser.</msg>
+<msg timestamp="20220601 18:55:15.485" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220601 18:55:15.486" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=102.0.5005.63)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0122B8F3+2406643]
+	Ordinal0 [0x011BAF31+1945393]
+	Ordinal0 [0x010AC610+837136]
+	Ordinal0 [0x010D49C3+1001923]
+	Ordinal0 [0x010D40A5+999589]
+	Ordinal0 [0x010F427C+1131132]
+	Ordinal0 [0x010CFA64+981604]
+	Ordinal0 [0x010F4494+1131668]
+	Ordinal0 [0x01104682+1197698]
+	Ordinal0 [0x010F4096+1130646]
+	Ordinal0 [0x010CE636+976438]
+	Ordinal0 [0x010CF546+980294]
+	GetHandleVerifier [0x01499612+2498066]
+	GetHandleVerifier [0x0148C920+2445600]
+	GetHandleVerifier [0x012C4F2A+579370]
+	GetHandleVerifier [0x012C3D36+574774]
+	Ordinal0 [0x011C1C0B+1973259]
+	Ordinal0 [0x011C6688+1992328]
+	Ordinal0 [0x011C6775+1992565]
+	Ordinal0 [0x011CF8D1+2029777]
+	BaseThreadInitThunk [0x76F9FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77177A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x77177A4E+238]
+</msg>
+<status status="FAIL" starttime="20220601 18:55:15.282" endtime="20220601 18:55:15.516"/>
+</kw>
+<kw name="Choose File" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div/form/div[1]/div[4]/div/div[2]/div/div/div[2]/div[1]</arg>
+<arg>../../Resources/File/This is Transcript.pdf</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<status status="NOT RUN" starttime="20220601 18:55:15.517" endtime="20220601 18:55:15.517"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220531 20:25:52.021" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220531 20:25:50.011" endtime="20220531 20:25:52.021"/>
+<status status="NOT RUN" starttime="20220601 18:55:15.518" endtime="20220601 18:55:15.518"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
-<arg>หางาน ตำแหน่งหรือบริษัท</arg>
-<arg>okkami Qa</arg>
+<arg>View Current File</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20220531 20:25:52.035" level="INFO">Current page contains text 'หางาน ตำแหน่งหรือบริษัท'.</msg>
-<status status="PASS" starttime="20220531 20:25:52.022" endtime="20220531 20:25:52.035"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220531 20:25:55.047" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20220531 20:25:52.036" endtime="20220531 20:25:55.047"/>
-</kw>
-<kw name="Click Link" library="SeleniumLibrary">
-<arg>xpath://*[@id="searchBody"]/div[2]/div[2]/a</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20220531 20:25:55.048" level="INFO">Clicking link 'xpath://*[@id="searchBody"]/div[2]/div[2]/a'.</msg>
-<status status="PASS" starttime="20220531 20:25:55.048" endtime="20220531 20:25:55.110"/>
+<status status="NOT RUN" starttime="20220601 18:55:15.519" endtime="20220601 18:55:15.519"/>
 </kw>
 <kw name="Log" library="BuiltIn">
-<arg>Filter Check Test Completed</arg>
+<arg>Test Completed</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220531 20:25:55.111" level="INFO">Filter Check Test Completed</msg>
-<status status="PASS" starttime="20220531 20:25:55.111" endtime="20220531 20:25:55.111"/>
+<status status="NOT RUN" starttime="20220601 18:55:15.519" endtime="20220601 18:55:15.519"/>
 </kw>
-<status status="PASS" starttime="20220531 20:25:49.938" endtime="20220531 20:25:55.112"/>
+<status status="FAIL" starttime="20220601 18:55:13.266" endtime="20220601 18:55:15.520">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=102.0.5005.63)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0122B8F3+2406643]
+	Ordinal0 [0x011BAF31+1945393]
+	Ordinal0 [0x010AC610+837136]
+	Ordinal0 [0x010D49C3+1001923]
+	Ordinal0 [0x010D40A5+999589]
+	Ordinal0 [0x010F427C+1131132]
+	Ordinal0 [0x010CFA64+981604]
+	Ordinal0 [0x010F4494+1131668]
+	Ordinal0 [0x01104682+1197698]
+	Ordinal0 [0x010F4096+1130646]
+	Ordinal0 [0x010CE636+976438]
+	Ordinal0 [0x010CF546+980294]
+	GetHandleVerifier [0x01499612+2498066]
+	GetHandleVerifier [0x0148C920+2445600]
+	GetHandleVerifier [0x012C4F2A+579370]
+	GetHandleVerifier [0x012C3D36+574774]
+	Ordinal0 [0x011C1C0B+1973259]
+	Ordinal0 [0x011C6688+1992328]
+	Ordinal0 [0x011C6775+1992565]
+	Ordinal0 [0x011CF8D1+2029777]
+	BaseThreadInitThunk [0x76F9FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77177A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x77177A4E+238]
+</status>
 </test>
-<doc>Testing the BlognoneJob Searching</doc>
-<status status="PASS" starttime="20220531 20:25:41.965" endtime="20220531 20:25:55.114"/>
+<doc>Testing the BlognoneJob Applying</doc>
+<status status="FAIL" starttime="20220601 18:54:58.700" endtime="20220601 18:55:15.527"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0" skip="0">All Tests</stat>
+<stat pass="2" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="3" fail="0" skip="0" id="s1" name="BlognoneJobSearching">BlognoneJobSearching</stat>
+<stat pass="2" fail="1" skip="0" id="s1" name="BlognoneJobApplying">BlognoneJobApplying</stat>
 </suite>
 </statistics>
 <errors>

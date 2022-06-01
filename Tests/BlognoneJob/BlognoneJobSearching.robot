@@ -6,8 +6,10 @@ Library             SeleniumLibrary
 
 *** Test Cases ***
 Check Landing Page Jobs Topic
+    #Start TestCase
     Open Browser    https://jobs.blognone.com/    chrome
     Maximize Browser Window
+    #Click & Verify Search Result
     Click Element    xpath://*[@id="root"]/div/div/div/div[2]/div[1]/div/a[6]/div[2]
     sleep    2
     Page Should Contain    หางาน ตำแหน่ง    Qa
@@ -27,3 +29,7 @@ Filter Check
     Sleep    3
     Click Link    xpath://*[@id="searchBody"]/div[2]/div[2]/a
     Log    Filter Check Test Completed
+
+
+*** Keywords ***
+Start Test
