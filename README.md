@@ -17,3 +17,8 @@ Requirement that you'll need to install before running theses script
 
 To run this
 robot -d results .\Tests\BlognoneJob\TestSuite.robot
+
+Room for improvment for these script
+-Dynamic Testing
+-(POM) Duplication
+-Variables
