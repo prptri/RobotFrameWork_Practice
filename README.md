@@ -24,7 +24,7 @@ Requirement that you'll need to install before running these script
 **_Note_** Before you run the TestSuite.robot scirpt
 
 
-- On the BlognoneJobLogin.robot you should put the valid id and password for the website to test login function on the variable that i marked the comment on it
+- On the BlognoneJobLogin.robot you should put the valid id and password for the website to test login function on the variable that I marked the comment on it ${email_text} & ${password}
 - The last test case (applying) should be fail since I hard code the specific site testing on okkami result but the jd site doesn't exist anymore.
 - Manual Test Case Example is in the excel file.
 
