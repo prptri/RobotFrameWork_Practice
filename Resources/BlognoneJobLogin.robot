@@ -63,6 +63,7 @@ Signing with Wrong Password
     Element Should Be Visible    ${alert_login_element}
     Log    Test Completed
 
+#Human check
 #Signing with Blognone
     #Go To    https://www.blognone.com/
     #Sleep    5
