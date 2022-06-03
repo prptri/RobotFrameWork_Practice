@@ -4,6 +4,7 @@ Documentation       A Test Sutie with multiply test    for blognonejob Website i
 Resource            ../../Resources/BlognoneJobLogin.robot
 Resource            ../../Resources/BlognoneJobSearching.robot
 Resource            ../../Resources/BlognoneJobApplying.robot
+#Test Cases Suite
 
 
 *** Test Cases ***
