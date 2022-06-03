@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220603 14:08:07.891" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220603 19:08:10.205" rpa="false" schemaversion="3">
 <suite id="s1" name="TestSuite" source="C:\Users\prptr\OneDrive\Documents\GitHub\RobotFrameWork_Practice\Tests\BlognoneJob\TestSuite.robot">
 <test id="s1-t1" name="Login TestCases" line="10">
 <kw name="Signing with Correct Email and Password" library="BlognoneJobLogin">
@@ -7,97 +7,97 @@
 <arg>${login_page_url}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220603 14:08:08.169" level="INFO">Opening browser 'chrome' to base url 'https://jobs.blognone.com/login?next=https%3A%2F%2Fjobs.blognone.com%2F'.</msg>
-<status status="PASS" starttime="20220603 14:08:08.169" endtime="20220603 14:08:10.326"/>
+<msg timestamp="20220603 19:08:10.519" level="INFO">Opening browser 'chrome' to base url 'https://jobs.blognone.com/login?next=https%3A%2F%2Fjobs.blognone.com%2F'.</msg>
+<status status="PASS" starttime="20220603 19:08:10.519" endtime="20220603 19:08:13.466"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220603 14:08:10.326" endtime="20220603 14:08:10.451"/>
+<status status="PASS" starttime="20220603 19:08:13.467" endtime="20220603 19:08:13.598"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${email_input_path}</arg>
 <arg>${email_text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220603 14:08:10.451" level="INFO">Typing text '' into text field '//*[@id="email"]'.</msg>
-<status status="PASS" starttime="20220603 14:08:10.451" endtime="20220603 14:08:10.532"/>
+<msg timestamp="20220603 19:08:13.599" level="INFO">Typing text '' into text field '//*[@id="email"]'.</msg>
+<status status="PASS" starttime="20220603 19:08:13.598" endtime="20220603 19:08:13.688"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <arg>${password_input_path}</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20220603 14:08:10.532" level="INFO">Typing password into text field '//*[@id="password"]'.</msg>
-<msg timestamp="20220603 14:08:10.578" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20220603 14:08:10.617" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20220603 14:08:10.532" endtime="20220603 14:08:10.617"/>
+<msg timestamp="20220603 19:08:13.688" level="INFO">Typing password into text field '//*[@id="password"]'.</msg>
+<msg timestamp="20220603 19:08:13.731" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220603 19:08:13.770" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220603 19:08:13.688" endtime="20220603 19:08:13.770"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>Login</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220603 14:08:10.619" level="INFO">Clicking button 'Login'.</msg>
-<status status="PASS" starttime="20220603 14:08:10.618" endtime="20220603 14:08:10.703"/>
+<msg timestamp="20220603 19:08:13.770" level="INFO">Clicking button 'Login'.</msg>
+<status status="PASS" starttime="20220603 19:08:13.770" endtime="20220603 19:08:13.861"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>Test Completed</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220603 14:08:10.704" level="INFO">Test Completed</msg>
-<status status="PASS" starttime="20220603 14:08:10.703" endtime="20220603 14:08:10.704"/>
+<msg timestamp="20220603 19:08:13.862" level="INFO">Test Completed</msg>
+<status status="PASS" starttime="20220603 19:08:13.861" endtime="20220603 19:08:13.862"/>
 </kw>
-<status status="PASS" starttime="20220603 14:08:08.169" endtime="20220603 14:08:10.704"/>
+<status status="PASS" starttime="20220603 19:08:10.518" endtime="20220603 19:08:13.862"/>
 </kw>
 <kw name="Sign Out" library="BlognoneJobLogin">
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220603 14:08:12.717" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220603 14:08:10.705" endtime="20220603 14:08:12.717"/>
+<msg timestamp="20220603 19:08:15.876" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220603 19:08:13.863" endtime="20220603 19:08:15.876"/>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>${link_to_profile_dashboard}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20220603 14:08:12.718" level="INFO">Clicking link '//*[@id="root"]/div/nav/div/ul[2]/li/a'.</msg>
-<status status="PASS" starttime="20220603 14:08:12.717" endtime="20220603 14:08:12.784"/>
+<msg timestamp="20220603 19:08:15.877" level="INFO">Clicking link '//*[@id="root"]/div/nav/div/ul[2]/li/a'.</msg>
+<status status="PASS" starttime="20220603 19:08:15.877" endtime="20220603 19:08:15.940"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>${page_profile_check}</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20220603 14:08:13.049" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20220603 14:08:13.050" level="FAIL">Page should have contained text 'Overview' but did not.</msg>
-<status status="FAIL" starttime="20220603 14:08:12.785" endtime="20220603 14:08:13.051"/>
+<msg timestamp="20220603 19:08:16.181" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220603 19:08:16.182" level="FAIL">Page should have contained text 'Overview' but did not.</msg>
+<status status="FAIL" starttime="20220603 19:08:15.940" endtime="20220603 19:08:16.186"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220603 14:08:13.052" endtime="20220603 14:08:13.052"/>
+<status status="NOT RUN" starttime="20220603 19:08:16.186" endtime="20220603 19:08:16.186"/>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>${signout_link}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20220603 14:08:13.052" endtime="20220603 14:08:13.052"/>
+<status status="NOT RUN" starttime="20220603 19:08:16.186" endtime="20220603 19:08:16.186"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220603 14:08:13.052" endtime="20220603 14:08:13.052"/>
+<status status="NOT RUN" starttime="20220603 19:08:16.186" endtime="20220603 19:08:16.186"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>${main_page_check}</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" starttime="20220603 14:08:13.052" endtime="20220603 14:08:13.053"/>
+<status status="NOT RUN" starttime="20220603 19:08:16.186" endtime="20220603 19:08:16.187"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>Test Completed</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" starttime="20220603 14:08:13.053" endtime="20220603 14:08:13.053"/>
+<status status="NOT RUN" starttime="20220603 19:08:16.187" endtime="20220603 19:08:16.187"/>
 </kw>
-<status status="FAIL" starttime="20220603 14:08:10.705" endtime="20220603 14:08:13.054"/>
+<status status="FAIL" starttime="20220603 19:08:13.863" endtime="20220603 19:08:16.187"/>
 </kw>
 <kw name="Signing with Wrong Email" library="BlognoneJobLogin">
-<status status="NOT RUN" starttime="20220603 14:08:13.054" endtime="20220603 14:08:13.055"/>
+<status status="NOT RUN" starttime="20220603 19:08:16.188" endtime="20220603 19:08:16.188"/>
 </kw>
 <kw name="Signing with Wrong Password" library="BlognoneJobLogin">
-<status status="NOT RUN" starttime="20220603 14:08:13.055" endtime="20220603 14:08:13.055"/>
+<status status="NOT RUN" starttime="20220603 19:08:16.189" endtime="20220603 19:08:16.189"/>
 </kw>
-<status status="FAIL" starttime="20220603 14:08:08.168" endtime="20220603 14:08:13.056">Page should have contained text 'Overview' but did not.</status>
+<status status="FAIL" starttime="20220603 19:08:10.517" endtime="20220603 19:08:16.190">Page should have contained text 'Overview' but did not.</status>
 </test>
 <test id="s1-t2" name="Searching TestCases" line="16">
 <kw name="Check Landing Page Jobs Topic" library="BlognoneJobSearching">
@@ -105,110 +105,110 @@
 <arg>https://jobs.blognone.com/</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220603 14:08:13.060" level="INFO">Opening browser 'chrome' to base url 'https://jobs.blognone.com/'.</msg>
-<status status="PASS" starttime="20220603 14:08:13.060" endtime="20220603 14:08:15.483"/>
+<msg timestamp="20220603 19:08:16.194" level="INFO">Opening browser 'chrome' to base url 'https://jobs.blognone.com/'.</msg>
+<status status="PASS" starttime="20220603 19:08:16.194" endtime="20220603 19:08:18.523"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220603 14:08:15.484" endtime="20220603 14:08:15.610"/>
+<status status="PASS" starttime="20220603 19:08:18.523" endtime="20220603 19:08:18.646"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath://*[@id="root"]/div/div/div/div[2]/div[1]/div/a[6]/div[2]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220603 14:08:15.611" level="INFO">Clicking element 'xpath://*[@id="root"]/div/div/div/div[2]/div[1]/div/a[6]/div[2]'.</msg>
-<status status="PASS" starttime="20220603 14:08:15.610" endtime="20220603 14:08:15.711"/>
+<msg timestamp="20220603 19:08:18.646" level="INFO">Clicking element 'xpath://*[@id="root"]/div/div/div/div[2]/div[1]/div/a[6]/div[2]'.</msg>
+<status status="PASS" starttime="20220603 19:08:18.646" endtime="20220603 19:08:18.738"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220603 14:08:17.721" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220603 14:08:15.712" endtime="20220603 14:08:17.721"/>
+<msg timestamp="20220603 19:08:20.740" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220603 19:08:18.738" endtime="20220603 19:08:20.740"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>หางาน ตำแหน่ง</arg>
 <arg>Qa</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20220603 14:08:17.743" level="INFO">Current page contains text 'หางาน ตำแหน่ง'.</msg>
-<status status="PASS" starttime="20220603 14:08:17.721" endtime="20220603 14:08:17.743"/>
+<msg timestamp="20220603 19:08:20.758" level="INFO">Current page contains text 'หางาน ตำแหน่ง'.</msg>
+<status status="PASS" starttime="20220603 19:08:20.740" endtime="20220603 19:08:20.758"/>
 </kw>
-<status status="PASS" starttime="20220603 14:08:13.059" endtime="20220603 14:08:17.743"/>
+<status status="PASS" starttime="20220603 19:08:16.193" endtime="20220603 19:08:20.759"/>
 </kw>
 <kw name="Searching Jobs in Landing Page" library="BlognoneJobSearching">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>https://jobs.blognone.com/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220603 14:08:17.745" level="INFO">Opening url 'https://jobs.blognone.com/'</msg>
-<status status="PASS" starttime="20220603 14:08:17.744" endtime="20220603 14:08:18.306"/>
+<msg timestamp="20220603 19:08:20.760" level="INFO">Opening url 'https://jobs.blognone.com/'</msg>
+<status status="PASS" starttime="20220603 19:08:20.759" endtime="20220603 19:08:21.375"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>xpath://*[@id="root"]/div/div/div/div[1]/div[2]/div[1]/form/div[2]/input</arg>
 <arg>Okkami</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220603 14:08:18.307" level="INFO">Typing text 'Okkami' into text field 'xpath://*[@id="root"]/div/div/div/div[1]/div[2]/div[1]/form/div[2]/input'.</msg>
-<status status="PASS" starttime="20220603 14:08:18.307" endtime="20220603 14:08:18.409"/>
+<msg timestamp="20220603 19:08:21.376" level="INFO">Typing text 'Okkami' into text field 'xpath://*[@id="root"]/div/div/div/div[1]/div[2]/div[1]/form/div[2]/input'.</msg>
+<status status="PASS" starttime="20220603 19:08:21.375" endtime="20220603 19:08:21.484"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>xpath://*[@id="root"]/div/div/div/div[1]/div[2]/div[1]/form/div[2]/button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220603 14:08:18.409" level="INFO">Clicking button 'xpath://*[@id="root"]/div/div/div/div[1]/div[2]/div[1]/form/div[2]/button'.</msg>
-<status status="PASS" starttime="20220603 14:08:18.409" endtime="20220603 14:08:18.495"/>
+<msg timestamp="20220603 19:08:21.485" level="INFO">Clicking button 'xpath://*[@id="root"]/div/div/div/div[1]/div[2]/div[1]/form/div[2]/button'.</msg>
+<status status="PASS" starttime="20220603 19:08:21.484" endtime="20220603 19:08:21.559"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220603 14:08:20.497" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220603 14:08:18.495" endtime="20220603 14:08:20.497"/>
+<msg timestamp="20220603 19:08:23.567" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220603 19:08:21.559" endtime="20220603 19:08:23.567"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>หางาน ตำแหน่งหรือบริษัท</arg>
 <arg>Okkami</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20220603 14:08:20.514" level="INFO">Current page contains text 'หางาน ตำแหน่งหรือบริษัท'.</msg>
-<status status="PASS" starttime="20220603 14:08:20.497" endtime="20220603 14:08:20.514"/>
+<msg timestamp="20220603 19:08:23.592" level="INFO">Current page contains text 'หางาน ตำแหน่งหรือบริษัท'.</msg>
+<status status="PASS" starttime="20220603 19:08:23.567" endtime="20220603 19:08:23.592"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>Test Completed</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220603 14:08:20.515" level="INFO">Test Completed</msg>
-<status status="PASS" starttime="20220603 14:08:20.514" endtime="20220603 14:08:20.515"/>
+<msg timestamp="20220603 19:08:23.593" level="INFO">Test Completed</msg>
+<status status="PASS" starttime="20220603 19:08:23.592" endtime="20220603 19:08:23.593"/>
 </kw>
-<status status="PASS" starttime="20220603 14:08:17.744" endtime="20220603 14:08:20.515"/>
+<status status="PASS" starttime="20220603 19:08:20.759" endtime="20220603 19:08:23.593"/>
 </kw>
 <kw name="Filter Check" library="BlognoneJobSearching">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath://*[@id="searchBody"]/div[2]/div[1]/div/div/div/div[15]/label/input</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220603 14:08:20.516" level="INFO">Clicking element 'xpath://*[@id="searchBody"]/div[2]/div[1]/div/div/div/div[15]/label/input'.</msg>
-<status status="PASS" starttime="20220603 14:08:20.516" endtime="20220603 14:08:20.597"/>
+<msg timestamp="20220603 19:08:23.595" level="INFO">Clicking element 'xpath://*[@id="searchBody"]/div[2]/div[1]/div/div/div/div[15]/label/input'.</msg>
+<status status="PASS" starttime="20220603 19:08:23.595" endtime="20220603 19:08:23.693"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220603 14:08:22.606" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220603 14:08:20.598" endtime="20220603 14:08:22.606"/>
+<msg timestamp="20220603 19:08:25.703" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220603 19:08:23.693" endtime="20220603 19:08:25.703"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>หางาน ตำแหน่งหรือบริษัท</arg>
 <arg>okkami Qa</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20220603 14:08:22.617" level="INFO">Current page contains text 'หางาน ตำแหน่งหรือบริษัท'.</msg>
-<status status="PASS" starttime="20220603 14:08:22.606" endtime="20220603 14:08:22.617"/>
+<msg timestamp="20220603 19:08:25.715" level="INFO">Current page contains text 'หางาน ตำแหน่งหรือบริษัท'.</msg>
+<status status="PASS" starttime="20220603 19:08:25.704" endtime="20220603 19:08:25.716"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220603 14:08:25.625" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20220603 14:08:22.618" endtime="20220603 14:08:25.625"/>
+<msg timestamp="20220603 19:08:28.718" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220603 19:08:25.716" endtime="20220603 19:08:28.718"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>Filter Check Test Completed</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220603 14:08:25.625" level="INFO">Filter Check Test Completed</msg>
-<status status="PASS" starttime="20220603 14:08:25.625" endtime="20220603 14:08:25.625"/>
+<msg timestamp="20220603 19:08:28.718" level="INFO">Filter Check Test Completed</msg>
+<status status="PASS" starttime="20220603 19:08:28.718" endtime="20220603 19:08:28.718"/>
 </kw>
-<status status="PASS" starttime="20220603 14:08:20.515" endtime="20220603 14:08:25.625"/>
+<status status="PASS" starttime="20220603 19:08:23.594" endtime="20220603 19:08:28.718"/>
 </kw>
-<status status="PASS" starttime="20220603 14:08:13.058" endtime="20220603 14:08:25.626"/>
+<status status="PASS" starttime="20220603 19:08:16.192" endtime="20220603 19:08:28.719"/>
 </test>
 <test id="s1-t3" name="Applying TestCases" line="21">
 <kw name="Applying without login" library="BlognoneJobApplying">
@@ -216,59 +216,59 @@
 <arg>https://jobs.blognone.com/login?next=https%3A%2F%2Fjobs.blognone.com%2F</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220603 14:08:25.629" level="INFO">Opening browser 'chrome' to base url 'https://jobs.blognone.com/login?next=https%3A%2F%2Fjobs.blognone.com%2F'.</msg>
-<status status="PASS" starttime="20220603 14:08:25.629" endtime="20220603 14:08:27.742"/>
+<msg timestamp="20220603 19:08:28.723" level="INFO">Opening browser 'chrome' to base url 'https://jobs.blognone.com/login?next=https%3A%2F%2Fjobs.blognone.com%2F'.</msg>
+<status status="PASS" starttime="20220603 19:08:28.723" endtime="20220603 19:08:30.962"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220603 14:08:27.742" endtime="20220603 14:08:27.877"/>
+<status status="PASS" starttime="20220603 19:08:30.962" endtime="20220603 19:08:31.095"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>https://jobs.blognone.com/company/okkami-inc/job/software-quality-ass-hQwN</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220603 14:08:27.878" level="INFO">Opening url 'https://jobs.blognone.com/company/okkami-inc/job/software-quality-ass-hQwN'</msg>
-<status status="PASS" starttime="20220603 14:08:27.878" endtime="20220603 14:08:28.479"/>
+<msg timestamp="20220603 19:08:31.095" level="INFO">Opening url 'https://jobs.blognone.com/company/okkami-inc/job/software-quality-ass-hQwN'</msg>
+<status status="PASS" starttime="20220603 19:08:31.095" endtime="20220603 19:08:31.693"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220603 14:08:30.481" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220603 14:08:28.480" endtime="20220603 14:08:30.481"/>
+<msg timestamp="20220603 19:08:33.708" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220603 19:08:31.693" endtime="20220603 19:08:33.708"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>xpath://*[@id="root"]/div/div/div/div[1]/div[2]/button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220603 14:08:30.481" level="INFO">Clicking button 'xpath://*[@id="root"]/div/div/div/div[1]/div[2]/button'.</msg>
-<msg timestamp="20220603 14:08:30.673" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20220603 14:08:30.673" level="FAIL">Button with locator 'xpath://*[@id="root"]/div/div/div/div[1]/div[2]/button' not found.</msg>
-<status status="FAIL" starttime="20220603 14:08:30.481" endtime="20220603 14:08:30.675"/>
+<msg timestamp="20220603 19:08:33.709" level="INFO">Clicking button 'xpath://*[@id="root"]/div/div/div/div[1]/div[2]/button'.</msg>
+<msg timestamp="20220603 19:08:33.903" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220603 19:08:33.904" level="FAIL">Button with locator 'xpath://*[@id="root"]/div/div/div/div[1]/div[2]/button' not found.</msg>
+<status status="FAIL" starttime="20220603 19:08:33.709" endtime="20220603 19:08:33.906"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220603 14:08:30.675" endtime="20220603 14:08:30.675"/>
+<status status="NOT RUN" starttime="20220603 19:08:33.907" endtime="20220603 19:08:33.907"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Please login before performing that action</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" starttime="20220603 14:08:30.675" endtime="20220603 14:08:30.675"/>
+<status status="NOT RUN" starttime="20220603 19:08:33.907" endtime="20220603 19:08:33.907"/>
 </kw>
-<status status="FAIL" starttime="20220603 14:08:25.629" endtime="20220603 14:08:30.676"/>
+<status status="FAIL" starttime="20220603 19:08:28.722" endtime="20220603 19:08:33.907"/>
 </kw>
 <kw name="Applying with login" library="BlognoneJobApplying">
-<status status="NOT RUN" starttime="20220603 14:08:30.677" endtime="20220603 14:08:30.677"/>
+<status status="NOT RUN" starttime="20220603 19:08:33.908" endtime="20220603 19:08:33.908"/>
 </kw>
 <kw name="Editing Upload Profile Test" library="BlognoneJobApplying">
-<status status="NOT RUN" starttime="20220603 14:08:30.677" endtime="20220603 14:08:30.677"/>
+<status status="NOT RUN" starttime="20220603 19:08:33.909" endtime="20220603 19:08:33.909"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220603 14:08:30.678" endtime="20220603 14:08:32.840"/>
+<status status="PASS" starttime="20220603 19:08:33.910" endtime="20220603 19:08:36.082"/>
 </kw>
-<status status="FAIL" starttime="20220603 14:08:25.628" endtime="20220603 14:08:32.841">Button with locator 'xpath://*[@id="root"]/div/div/div/div[1]/div[2]/button' not found.</status>
+<status status="FAIL" starttime="20220603 19:08:28.721" endtime="20220603 19:08:36.083">Button with locator 'xpath://*[@id="root"]/div/div/div/div[1]/div[2]/button' not found.</status>
 </test>
 <doc>A Test Sutie with multiply test for blognonejob Website including Login,Searching, and Applying.</doc>
-<status status="FAIL" starttime="20220603 14:08:07.893" endtime="20220603 14:08:32.843"/>
+<status status="FAIL" starttime="20220603 19:08:10.207" endtime="20220603 19:08:36.086"/>
 </suite>
 <statistics>
 <total>
