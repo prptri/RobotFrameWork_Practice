@@ -27,7 +27,6 @@ Requirement that you'll need to install before running these script
 - On the BlognoneJobLogin.robot you should put the valid id and password for the website to test login function on the variable that i marked the comment on it
 - The last test case (applying) should be fail since I hard code the specific site testing on okkami result but the jd site doesn't exist anymore.
 - Manual Test Case Example is in the excel file.
-- UML = usecase diagram example
 
 To run this
 robot -d results .\Tests\BlognoneJob\TestSuite.robot
