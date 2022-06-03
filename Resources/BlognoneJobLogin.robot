@@ -8,14 +8,14 @@ Library             SeleniumLibrary
 #Best Pracitces
 #Global Variable = UPPERCASE
 #Local Variable = lowercase
-${email_text}                   pattri.prp@gmail.com
+${email_text}                   #put your registered email here
 ${login_page_url}               https://jobs.blognone.com/login?next=https%3A%2F%2Fjobs.blognone.com%2F
 ${email_input_path}             //*[@id="email"]
 ${password_input_path}          //*[@id="password"]
-${password}                     1928prptri
+${password}                     #put your registered password here
 ${login_button}                 Login
 ${link_to_profile_dashboard}    //*[@id="root"]/div/nav/div/ul[2]/li/a
-${signout_link}                 xpath://*[@id="root"]/div/div/div/div/div/nav/div/div/a[3]
+${signout_link}                 xpath://*[@id="root"]/div/div/div/div/nav/div/div/a[4]
 ${wrong_email}                  wrongemail@gmail.com
 ${login_header_button}          //*[@id="root"]/div/nav/div/ul[2]/li/a
 ${wrong_password}               dfkoegks
@@ -25,7 +25,7 @@ ${main_page_check}              the best place to find tech talents
 ${page_profile_check}           Overview
 
 
-*** Test Cases ***
+*** Keywords ***
 Signing with Correct Email and Password
     Open Browser    ${login_page_url}    chrome
     Maximize Browser Window

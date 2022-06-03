@@ -4,7 +4,7 @@ Documentation       Testing the BlognoneJob Searching
 Library             SeleniumLibrary
 
 
-*** Test Cases ***
+*** Keywords ***
 Check Landing Page Jobs Topic
     #Start TestCase
     Open Browser    https://jobs.blognone.com/    chrome
@@ -27,9 +27,5 @@ Filter Check
     Sleep    2
     Page Should Contain    หางาน ตำแหน่งหรือบริษัท    okkami Qa
     Sleep    3
-    Click Link    xpath://*[@id="searchBody"]/div[2]/div[2]/a
+    #Click Link    xpath://*[@id="searchBody"]/div[2]/div[2]/a
     Log    Filter Check Test Completed
-
-
-*** Keywords ***
-Start Test
