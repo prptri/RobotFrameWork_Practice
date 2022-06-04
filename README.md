@@ -2,7 +2,7 @@
 
 ## Practicing Automation Basic using Robot Framework
 
-Requirement that you'll need to install before running these script
+To running the script you'll need these
 
 - Python (at least 3 or the latest version)
 
